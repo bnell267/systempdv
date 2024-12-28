@@ -1,4 +1,4 @@
-<html>
+
 <?php
 SESSION_START();
 if(!isset($_SESSION['chave'])){
@@ -39,7 +39,7 @@ $result=mysqli_query($conexao,"SELECT * FROM testenv where chave='STATUSENABLED'
 while($user_data=mysqli_fetch_assoc($result)){
 //$var=$user_data['id'];
 
-echo '<table method="get">';
+echo '<table method="post">';
 echo '<tbody>';
 echo '<tr>';
 echo '<td style="padding:10;">'.$user_data['id'].'<td/>';
@@ -111,4 +111,4 @@ echo '<table/>' ;
 <?php
 }
 ?>
-</html>
+

@@ -1,4 +1,4 @@
-<html>
+
 <?php
 include_once('config.php');
 

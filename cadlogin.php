@@ -57,12 +57,6 @@ echo '<tr/>';
 echo '<tbody/>';
 echo '<table/>';?>
 
-<?php
-}
-
-
-?>
-
 
 
 

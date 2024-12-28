@@ -1,6 +1,6 @@
 
 <?php
-include_once('config.php');
+ includ('config.php');
 
 //if(!isset($_POST['senha'])){
 if(empty($_POST['senha'])){header('Location:vazionot.php');}
@@ -22,9 +22,8 @@ if(isset($_SESSION['senha'])){
 header("Location:pag ini.php");}
 
 }
-else{
 
-  header("Location:unautorized.php");}
+  header("Location:unautorized.php");
   
   
   

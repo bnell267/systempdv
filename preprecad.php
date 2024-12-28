@@ -27,7 +27,7 @@ echo "STATUS:conectado";
 //if(isset($_POST['submit'])){
 
 
-if(empty($_POST['chave'])){header("Location:prepre.php");}else
+if(empty($_POST['chave'])){header("Location:prepre.php");
 if(isset($_POST['chave'])){
 $chave=$_POST['chave'];
 

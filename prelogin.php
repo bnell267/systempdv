@@ -1,7 +1,7 @@
 <?php
 $dbHost = 'sql213.infinityfree.com';
 $dbUsername = 'if0_37950266';
-$dbPassword = 'Your vPanel Password';
+$dbPassword = 'ajpda170a';
 $dbName = 'if0_37950266_teste';
 
 

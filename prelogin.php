@@ -1,9 +1,9 @@
-<html>
+
 <?php
 include_once('config.php');
 
 //if(!isset($_POST['senha'])){
-if(empty($_POST['senha'])){header('Location:vazionot.php');}else{
+if(empty($_POST['senha'])){header('Location:vazionot.php');}
 $senha=$_POST['senha'];
 $chave=$_POST['chave'];
 $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");
@@ -37,11 +37,8 @@ else{
 
 
 
-//else{
-//header:(Location:index.php');
-//echo 'usuario não encontrado';}
 
-</html>
+
 
 
 

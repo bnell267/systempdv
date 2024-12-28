@@ -1,6 +1,21 @@
 
 
+<?php
+$dbHost = 'localhost';
+$dbUsername = 'root';
+$dbPassword = '';
+$dbName = 'teste';
 
+
+$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+if($conexao->connect_errno){
+echo "erro";}
+
+else
+{
+echo "STATUS:conectado";
+}
+?>
 
 
 
@@ -8,7 +23,7 @@
 //print_r($_REQUEST);
 ?>
 <?php
-include_once('config.php');
+//include_once('config.php');
 //if(isset($_POST['submit'])){
 
 

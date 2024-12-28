@@ -5,7 +5,7 @@ if(!isset($_SESSION['chave'])){
 
 unset($_SESSION['chave']);
 
-header('Location:naoautorized.php');}
+header('Location:naoautorized.php');}else{
 
 ?>
 

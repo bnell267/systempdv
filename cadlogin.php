@@ -90,7 +90,7 @@ $result=mysqli_query($conexao,"SELECT * FROM testenv where chave='STATUSDISABLED
 while($user_data=mysqli_fetch_assoc($result)){
 //$var=$user_data['id'];
 
-echo '<table method="get">';
+echo '<table method="post">';
 echo '<tbody>';
 echo '<tr>';
 echo '<td style="padding:10;">'.$user_data['id'].'<td/>';

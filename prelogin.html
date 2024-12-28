@@ -3,9 +3,9 @@
 include_once('config.php');
 
 //if(!isset($_GET['senha'])){
-if(empty($_POST['senha'])){header('Location:vazionot.html');}else{
-$senha=$_POST['senha'];
-$chave=$_POST['chave'];
+if(empty($_GET['senha'])){header('Location:vazionot.html');}else{
+$senha=$_GET['senha'];
+$chave=$_GET['chave'];
 $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");
 
 

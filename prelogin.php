@@ -1,11 +1,11 @@
-<html>
+
 <?php
 include_once('config.php');
 
-//if(!isset($_GET['senha'])){
-if(empty($_GET['senha'])){header('Location:vazionot.php');}else{
-$senha=$_GET['senha'];
-$chave=$_GET['chave'];
+//if(!isset($_POST['senha'])){
+if(empty($_POST['senha'])){header('Location:vazionot.php');}else{
+$senha=$_POST['senha'];
+$chave=$_POST['chave'];
 $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");
 
 
@@ -48,4 +48,4 @@ else{
 
 ?>
 
-<html/>
+

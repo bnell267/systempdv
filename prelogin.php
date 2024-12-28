@@ -3,7 +3,7 @@
 include_once('config.php');
 
 //if(!isset($_GET['senha'])){
-if(empty($_GET['senha'])){header('Location:vazionot.html');}else{
+if(empty($_GET['senha'])){header('Location:vazionot.php');}else{
 $senha=$_GET['senha'];
 $chave=$_GET['chave'];
 $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");
@@ -11,7 +11,7 @@ $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave
 
 if(mysqli_num_rows($res)>=1){
 
-echo($_REQUEST);
+//echo($_REQUEST);
 SESSION_START();
 
 $_SESSION['senha']=$senha;
@@ -19,12 +19,12 @@ $_SESSION['senha']=$senha;
 
 
 if(isset($_SESSION['senha'])){
-header("Location:pag ini.html");}
+header("Location:pag ini.php");}
 
 }
 else{
 
-  header("Location:unautorized.html");}
+  header("Location:unautorized.php");}
   
   
   

@@ -1,8 +1,8 @@
 <?php
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'teste';
+$dbHost = 'sql213.infinityfree.com';
+$dbUsername = 'if0_37950266';
+$dbPassword = 'Your vPanel Password';
+$dbName = 'if0_37950266_teste';
 
 
 $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);

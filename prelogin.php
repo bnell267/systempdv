@@ -19,12 +19,12 @@ $_SESSION['senha']=$senha;
 
 
 if(isset($_SESSION['senha'])){
-header("Location:pag ini.php");}
+header("Location:pag ini.html");}
 
 }
 else{
 
-  header("Location:unautorized.php");}
+  header("Location:unautorized.html");}
   
   
   

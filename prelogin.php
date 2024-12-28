@@ -1,6 +1,21 @@
-
 <?php
- includ('config.php');
+$dbHost = 'localhost';
+$dbUsername = 'root';
+$dbPassword = '';
+$dbName = 'teste';
+
+
+$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+if($conexao->connect_errno){
+echo "erro";}
+
+else
+{
+echo "STATUS:conectado";
+}
+?>
+<?php
+ //includ('config.php');
 
 //if(!isset($_POST['senha'])){
 if(empty($_POST['senha'])){header('Location:vazionot.php');}

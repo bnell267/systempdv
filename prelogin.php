@@ -18,9 +18,9 @@ echo "STATUS:conectado";
  //includ('config.php');
 
 //if(!isset($_POST['senha'])){
-if(empty($_GET['senha'])){header('Location:vazionot.php');}else{
-$senha=$_GET['senha'];
-$chave=$_GET['chave'];
+if(empty($_POST['senha'])){header('Location:vazionot.php');}else{
+$senha=$_POST['senha'];
+$chave=$_POST['chave'];
 $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");}
 
 
@@ -34,11 +34,11 @@ $_SESSION['senha']=$senha;}else
 
 
 if(isset($_SESSION['senha'])){
-header("Location:pag ini.php");}else
+header('Location:pag ini.php');}else
 
 {
 
-  header("Location:unautorized.php");}
+  header('Location:unautorized.php');}
   
   
   

@@ -10,11 +10,11 @@ $result=mysqli_query($conexao,"SELECT * FROM testenv WHERE chave='statushabilite
 $var=mysqli_fetch_assoc($result);{
 
 ?>
-<form action="prelogin.php" method="POST">
+<form action=index.php" method="get">
 <br/><input type="text" name="nome"value="ADMIN"readonly/>
 <br/><input type="text" name="senha"value=""placeholder="SENHA"/>
 <br/><input type="text" name="chave"value="STATUSENABLED"readonly/>
-<input type="submit"/>
+<input type="submit"href="prelogin.php"/>
 
 <form/>
 

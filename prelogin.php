@@ -1,7 +1,7 @@
 
 <?php
  //include('config.php');
-php(info);
+//php(info);
 
 if(empty($_POST['senha'])){header('Location:vazionot.php');}
 $senha=$_POST['senha'];

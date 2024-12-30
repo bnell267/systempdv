@@ -1,6 +1,6 @@
 
 <?php
- include('config.php');
+ //include('config.php');
 php(info);
 
 if(empty($_POST['senha'])){header('Location:vazionot.php');}

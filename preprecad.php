@@ -5,7 +5,7 @@
 
 
 <?php
-//print_r($_REQUEST);
+print_r($_REQUEST);
 ?>
 <?php
 include_once('config.php');

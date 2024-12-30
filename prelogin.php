@@ -1,7 +1,7 @@
 
 <?php
- //include 'config.php';
-echo "teste";
+
+print_r "teste";
   
   
   

@@ -10,39 +10,13 @@ $result=mysqli_query($conexao,"SELECT * FROM testenv WHERE chave='statushabilite
 $var=mysqli_fetch_assoc($result);{
 
 ?>
-<form action="index.html" method="POST">
+<form action="" method="POST">
 <br/><input type="text" name="nome"value="ADMIN"readonly/>
 <br/><input type="text" name="senha"value=""placeholder="SENHA"/>
 <br/><input type="text" name="chave"value="STATUSENABLED"readonly/>
-<input type="submit"/>
-
-  <?php
-include('config.php');
-//php(info);
-if(empty($_POST['senha'])){header('Location:vazionot.php');}
-$senha=$_POST['senha'];
-$chave=$_POST['chave'];
-$res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave='$chave'");
+<a href="prelogin.php">ENTRAR<a/>
 
 
-if(mysqli_num_rows($res)>=1){
-
-echo($_REQUEST);
-//SESSION_START();
-
-//$_SESSION['senha']=$senha;
-//$_SESSION['id']=$id;
-
-header('Location:pag ini.php');}
-}else
-
-{
-
-  header('Location:unautorized.php');}
-  
-  
-  
-?>
 
 
 

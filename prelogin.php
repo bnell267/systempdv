@@ -16,7 +16,7 @@ echo "STATUS:conectado";
 ?>
 <?php
  //includ('config.php');
-
+php(info);
 
 if(empty($_POST['senha'])){header('Location:vazionot.php');}
 $senha=$_POST['senha'];

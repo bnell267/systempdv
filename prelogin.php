@@ -1,21 +1,6 @@
+
 <?php
-$dbHost = 'sql213.infinityfree.com';
-$dbUsername = 'if0_37950266';
-$dbPassword = 'ajpda170a';
-$dbName = 'if0_37950266_teste';
-
-
-$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
-if($conexao->connect_errno){
-echo "erro";}
-
-else
-{
-echo "STATUS:conectado";
-}
-?>
-<?php
- //includ('config.php');
+ include('config.php');
 php(info);
 
 if(empty($_POST['senha'])){header('Location:vazionot.php');}
@@ -27,9 +12,9 @@ $res=mysqli_query($conexao,"SELECT * FROM testenv where senha='$senha' AND chave
 if(mysqli_num_rows($res)>=1){
 
 echo($_REQUEST);
-SESSION_START();
+//SESSION_START();
 
-$_SESSION['senha']=$senha;
+//$_SESSION['senha']=$senha;
 //$_SESSION['id']=$id;
 
 header('Location:pag ini.php');}

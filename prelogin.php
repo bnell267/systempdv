@@ -1,8 +1,4 @@
 
-<html>
-
-<p>teste</p>
-  <div>
 
 <?php
 include_once('config.php');
@@ -51,12 +47,7 @@ else{
 
 
     
-  </div>
-  
-  
-</html>
-  
-  
+
    
   
 
